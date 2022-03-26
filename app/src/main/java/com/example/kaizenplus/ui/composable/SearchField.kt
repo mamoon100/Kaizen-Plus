@@ -8,10 +8,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
-import androidx.compose.material3.OutlinedTextField
-import androidx.compose.material3.TextFieldDefaults
+import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
@@ -29,7 +26,8 @@ import androidx.compose.ui.unit.dp
 fun SearchField(
     value: String,
     onValueChange: (String) -> Unit,
-    onCancelButton: () -> Unit
+    onCancelButton: () -> Unit,
+    placeHolder: String
 ) {
     val keyboardController = LocalSoftwareKeyboardController.current
     val focusManager = LocalFocusManager.current
@@ -46,6 +44,9 @@ fun SearchField(
                 backgroundColor = Color.White
             ),
             shape = RoundedCornerShape(12.dp),
+            placeholder = {
+                Text(text = placeHolder)
+            },
             trailingIcon = {
                 if (showClearButton) {
                     IconButton(

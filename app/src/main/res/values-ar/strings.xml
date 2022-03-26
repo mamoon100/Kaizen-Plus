@@ -7,4 +7,6 @@
     <string name="zarqa">الزرقاء الأردن</string>
     <string name="jarash">جرش</string>
     <string name="ajloun">عجلون</string>
+    <string name="text_field_hint">البحث باستخدام اسم المدينة</string>
+    <string name="no_result">لا نتائج</string>
 </resources>

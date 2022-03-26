@@ -2,6 +2,7 @@ package com.example.kaizenplus.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.R
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.animation.*
@@ -22,6 +23,7 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.kaizenplus.ui.composable.*
 import com.example.kaizenplus.ui.theme.KaizenPlusTheme
@@ -75,7 +77,8 @@ class MainActivity : ComponentActivity() {
                             },
                             {
                                 setKeyWord("")
-                            }
+                            },
+                            placeHolder = stringResource(com.example.kaizenplus.R.string.text_field_hint)
                         )
                         AnimatedVisibility(
                             visible = !isSearching,

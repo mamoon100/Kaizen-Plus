@@ -6,6 +6,8 @@
     <string name="zarqa">Zarqa</string>
     <string name="jarash">Jarash</string>
     <string name="ajloun">Adjlun</string>
+    <string name="text_field_hint">search by country name</string>
+    <string name="no_result">No Result found</string>
     
     <string-array name="default_city_name">
         <item>@string/amman</item>
