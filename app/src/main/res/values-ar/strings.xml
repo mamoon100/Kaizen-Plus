@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kaizen Plus</string>
+    <string name="title">الطقس</string>
+    <string name="amman">عمًان</string>
+    <string name="irbid">اربد</string>
+    <string name="zarqa">الزرقاء الأردن</string>
+    <string name="jarash">جرش</string>
+    <string name="ajloun">عجلون</string>
+</resources>

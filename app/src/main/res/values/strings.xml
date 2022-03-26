@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Kaizen Plus</string>
+    <string name="title">Weather App</string>
+    <string name="amman">Amman</string>
+    <string name="irbid" >Irbid</string>
+    <string name="zarqa">Zarqa</string>
+    <string name="jarash">Jarash</string>
+    <string name="ajloun">Adjlun</string>
+    
+    <string-array name="default_city_name">
+        <item>@string/amman</item>
+        <item>@string/irbid</item>
+        <item>@string/zarqa</item>
+        <item>@string/jarash</item>
+        <item>@string/ajloun</item>
+    </string-array>
 </resources>
